@@ -1,3 +1,6 @@
+# This program outputs the Fibonacci sequence for as long
+# as it can using the closed-form expression of the series.
+
 $_ = $$ / $$ #  1
 @_ = $_ + $_ #  2
 $- = $_ - @_ # -1
@@ -10,10 +13,10 @@ $___ = ($_ + @__) / @_ # golden ratio
 $. = $_ # Initialize counter.
 
 @____ = -> {
-  $- = ($___ ** $. - @___ ** $.) / @__  # reuse for fib number
-  $> << $- - $- % $_<< ('' << @_ * $__) # output as Float and newline
-  $. += $_ # increment
-  @____[]  # Go again.
+  $- = ($___ ** $. - @___ ** $.) / @__  # Reuse for fib number.
+  $> << $- - $- % $_<< ('' << @_ * $__) # Output as Float and newline.
+  $. += $_ # Increment
+  @____[]  # and go again.
 }
 
 @____[]
