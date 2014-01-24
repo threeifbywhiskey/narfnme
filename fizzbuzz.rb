@@ -1,5 +1,3 @@
-# Run with `seq 100 | ruby -n fizzbuzz.rb`.
-
 $-_ = $$ - $$  # 0
 $-  = $$ / $$  # 1
 @_  = $- + $-  # 2
