@@ -13,8 +13,8 @@ $___ = ($_ + @__) / @_ # golden ratio
 $. = $_ # Initialize counter.
 
 @____ = -> {
-  $- = ($___ ** $. - @___ ** $.) / @__  # Reuse for fib number.
-  $> << $- - $- % $_<< ('' << @_ * $__) # Output as Float and newline.
+  $- = ($___ ** $. - @___ ** $.) / @__     # Reuse for fib number.
+  $> << "#$-"[/[^.]+/] << ('' << @_ * $__) # Print without fractional part.
   $. += $_ # Increment
   @____[]  # and go again.
 }
