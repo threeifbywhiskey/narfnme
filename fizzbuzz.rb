@@ -13,8 +13,8 @@ $___ = '' << $-_ * $__ - $__ << $-_ * ($__ + @_) << @__ << @__ # Fizz
   $. += _   # increment n
   $> << ($. % $-_ == __ ? $___ + @___ # "FizzBuzz" if mod-15
        : $. % $_  == __ ? $___        # "Fizz" for 3
-       : $. % $__  == __ ? @___        # "Buzz" for 5
+       : $. % $__ == __ ? @___        # "Buzz" for 5
        : $.) <<                       # Otherwise, n
-       ('' << $__ * @_)                # and a newline
-  $. < ($__ * @_) ** @_ ? ___[] : _    # Check n against 100
+       ('' << $__ * @_)               # and a newline
+  $. < ($__ * @_) ** @_ ? ___[] : _   # Check n against 100.
 })[] # Immediately invoke the lambda.
