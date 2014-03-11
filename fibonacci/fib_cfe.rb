@@ -3,9 +3,9 @@
 
 $_ = $$ / $$ #  1
 @_ = $_ + $_ #  2
-$- = $_ - @_ # -1
+$-_ = $_ - @_ # -1
 $__= @_ * @_ + $_ # 5
-@__= $__ ** (@_ ** $-) # sqrt(5)
+@__= $__ ** (@_ ** $-_) # sqrt(5)
 
 $___ = ($_ + @__) / @_ # golden ratio
 @___ = ($_ / -$___)    # negative reciprocal
@@ -13,8 +13,8 @@ $___ = ($_ + @__) / @_ # golden ratio
 $. = $_ # Initialize counter.
 
 @____ = -> {
-  $- = ($___ ** $. - @___ ** $.) / @__     # Reuse for fib number.
-  $> << "#$-"[/[^.]+/] << ('' << @_ * $__) # Print without fractional part.
+  $-_ = ($___ ** $. - @___ ** $.) / @__     # Reuse for fib number.
+  $> << "#$-_"[/[^.]+/] << ('' << @_ * $__) # Print without fractional part.
   $. += $_ # Increment
   @____[]  # and go again.
 }
